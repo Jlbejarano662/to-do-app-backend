@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(cors());
 
 mongoose
-  .connect(MONGODB_URI, connectionOptions)
+  .connect("mongodb+srv://invitado:invitado@clusterjazminbejarano.k5kqklo.mongodb.net/todolist", connectionOptions)
   .then(() => console.log("Connected successfully"))
   .catch((err) => console.error(err));
 
